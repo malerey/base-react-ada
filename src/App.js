@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Persona from './persona'
+
+
 
 function App() {
-  return (
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Persona
+      nombre="Ada"
+      bio="Creadora de la primera computadora"
+      />
+      <Persona
+      nombre="Grace Hopper"
+      bio="Creadora del primer compilador"
+      />
     </div>
   );
 }
