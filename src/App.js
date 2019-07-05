@@ -8,7 +8,7 @@ function App() {
   return(
     <div className="App">
       <Persona
-      nombre="Ada"
+      nombre="Hedy Lamarr"
       bio="Creadora de la primera computadora"
       />
       <Persona
