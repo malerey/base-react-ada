@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+  width: 200px;
+  height: 200px;
+  background-color: #FFFFA5;
+  margin: 20px;
+  font-family: 'Caveat', cursive;
+  padding: 20px;
+  font-size: 40px;
+}
