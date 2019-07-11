@@ -26,7 +26,7 @@ class Main extends Component {
   }
 
   removeNote = id => {
-    var filtered = this.state.notes.filter((e, i, a) => i != id) 
+    var filtered = this.state.notes.filter((e, i) => i != id) 
     this.setState({
       notes: filtered
     })
