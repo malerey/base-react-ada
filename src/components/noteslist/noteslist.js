@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './noteslist.css'
+import SingleNote from '../single-note/single-note'
 
 class NotesList extends Component {
   constructor(props) {
@@ -11,7 +12,13 @@ class NotesList extends Component {
   render() {
     return (
       <div className="notes-list">
-        {this.props.list.map(n => <div className="note">{n}</div>)}
+        {this.props.list.map((n,i) => 
+        <SingleNote 
+        data={n}
+        id={i}
+        removeNote={this.props.removeNote}
+        />
+        )}
       </div>
 
     )

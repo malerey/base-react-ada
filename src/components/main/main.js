@@ -25,6 +25,14 @@ class Main extends Component {
     })
   }
 
+  removeNote = id => {
+    var filtered = this.state.notes.filter((e, i, a) => i != id) 
+    this.setState({
+      notes: filtered
+    })
+  
+  }
+
   render() {
     return (
       <div className="notes-app">
@@ -44,6 +52,7 @@ class Main extends Component {
 
         {this.state.notes.length ?  
         <NotesList
+        removeNote={this.removeNote}
         list={this.state.notes}/>
         : ''
         }
