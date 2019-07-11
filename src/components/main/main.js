@@ -40,7 +40,7 @@ class Main extends Component {
         <div className="notes-editor">
           <textarea
             value={this.state.newNote}
-            onChange={e => this.handleChange(e)}
+            onChange={this.handleChange}
             rows="4"
             cols="50">
           </textarea>
